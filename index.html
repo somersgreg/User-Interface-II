@@ -2,86 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-  background-color:#080808;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.name {
-  border-radius: 10px;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
+<link rel="stylesheet" href="style/index.css">
 </head>
 <body>
 
@@ -91,7 +12,7 @@ h1 {
   <header>
     <div>
       <nav>
-          <img src="img/gregoryText.png" alt="Name Tag">
+          <div><h1>PORTFOLIO</h1><h2> of</h2></div>
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="#product">Projects</a>
@@ -100,12 +21,12 @@ h1 {
       </nav>
       </div>
 </header>
-
+<hr>
 <!-- <h1>GREGORY SOMERS</h1> -->
 <img class="name" src="img/coloredName.png" alt="Name" style="width:100%">
 <hr>
 
-<h2>PORTFOLIO</h2>
+
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -125,7 +46,7 @@ h1 {
   </div>
   <div class="column nature">
     <div class="content">
-      <img src="/w3images/fff.png" alt="Place Holder" style="width:100%">
+      <img src="/img/fff.png" alt="Place Holder" style="width:100%">
       <h4>CSS</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
