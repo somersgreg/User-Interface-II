@@ -176,8 +176,12 @@ a:hover {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
   }
+
+nav div {
+  flex-wrap: nowrap;
+  /* background-color: aquamarine; */
+}
 
   .main header nav a {
     /* margin-bottom: 20px; */
@@ -189,7 +193,7 @@ a:hover {
 
 @media(max-width: 500px) {
   .main {
-    background: black;
+    /* background: black; */
   }
 
   .main header nav {
@@ -200,4 +204,21 @@ a:hover {
   .main header nav a {
     margin-bottom: 20px;
   }
+
+  #myBtnContainer {
+    display: none;
+  }
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.main header nav {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
 }
