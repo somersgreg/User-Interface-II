@@ -1,15 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>GS Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
     <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> -->
-    <title>Document</title>
+    <script type="text/javascript" src="JS/index.js" async></script>
+    <link rel="stylesheet" href="style/index.css">
+
 </head>
+
 <body>
-    
+    <!-- MAIN (Center website) -->
+    <div class="main">
+        <header>
+            <div>
+                <nav>
+                    <div>
+                        <h1>PORTFOLIO</h1>
+                        <h2> of</h2>
+                    </div>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#product">Projects</a>
+                    <a href="#blog">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <hr>
+        <!-- <h1>GREGORY SOMERS</h1> -->
+        <img class="name" src="img/coloredName.png" alt="Name" style="width:100%">
+        <hr>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('Web')"> WEB</button>
+            <button class="btn" onclick="filterSelection('Droid')"> ANDROID</button>
+            <button class="btn" onclick="filterSelection('UX')"> UX DESIGN</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column Web">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>HTML</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column Web">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>CSS</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column Web">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>JavaScript</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+            <div class="column Droid">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>Android</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column Droid">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>Android</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column Droid">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>Android</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+            <div class="column UX">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>UX</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column UX">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>UX</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column UX">
+                <div class="content">
+                    <img src="/img/fff.png" alt="Place Holder" style="width:100%">
+                    <h4>UX</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <!-- END GRID -->
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <p>Copyright &copy;2013</p>
+        </footer>
+        <!-- END MAIN -->
+    </div>
 </body>
+
 </html>
