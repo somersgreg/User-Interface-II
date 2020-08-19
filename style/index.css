@@ -1,43 +1,39 @@
 /* Add CSS styling here */
 /* Use mediaqueries to set the background-color to lavender if the viewport is 800 pixels wide or wider, to lightgreen if the viewport is between 400 and 799 pixels wide. If the viewport is smaller than 400 pixels, the background-color is lightblue: */
 
-body {
+/* body {
   background-color: lightblue;
+} */
+body {
+  /* background-color: #f1f1f1;
+  padding: 20px; */
+  font-family: Arial;
 }
-
-@media screen and (min-width: 400px) {
-  body {
+@media screen and (min-width: 600px) {
+  .container {
     background-color: lightgreen;
   }
 }
 
 @media screen and (min-width: 800px) {
-  body {
+  .container {
     background-color: lavender;
   }
 }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
+
 
 /* Center website */
 
-.main {
+.container {
   max-width: 1000px;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 h1 {
   font-size: 50px;
   word-break: break-all;
-}
-
-nav div {
-  display: flex;
-  align-items: flex-end;
 }
 
 nav {
@@ -48,6 +44,11 @@ nav {
   width: 100%;
   /* border: 2px solid red; */
 }
+nav div {
+  display: flex;
+  align-items: flex-end;
+}
+
 
 nav a {
   height: 20px; 
