@@ -50,6 +50,8 @@ nav {
 }
 
 nav a {
+  height: 20px; 
+  /* Thinking to make thise short and without background  */
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -79,15 +81,14 @@ a:hover {
 }
 
 /* Create three equal columns that floats next to each other */
-
 .column {
   float: left;
-  width: 33.33%;
+  width: 30%;
   display: none;
   /* Hide columns by default */
 }
 
-/* Clear floats after rows */
+/* Clear floats after rows
 
 .row:after {
   content: "";
