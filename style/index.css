@@ -1,1 +1,21 @@
 /* Add CSS styling here */
+/* Use mediaqueries to set the background-color to lavender if the viewport is 800 pixels wide or wider, to lightgreen if the viewport is between 400 and 799 pixels wide. If the viewport is smaller than 400 pixels, the background-color is lightblue: */
+
+/* body {
+  background-color: lightblue;
+} */
+* {
+  border: 1px solid red;
+}
+
+/* Center website */
+
+/* MEDIA BREAK POINTS */
+
+/* 800px and 500px
+
+iPhone: 360×640
+Laptop: 1366×768
+Widescreen: 1920×1080 */
+
+/* Responsive */
