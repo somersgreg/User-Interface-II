@@ -1,12 +1,15 @@
 /* Add CSS styling here */
 /* Use mediaqueries to set the background-color to lavender if the viewport is 800 pixels wide or wider, to lightgreen if the viewport is between 400 and 799 pixels wide. If the viewport is smaller than 400 pixels, the background-color is lightblue: */
-
-/* body {
-  background-color: lightblue;
-} */
 * {
-  border: 1px solid red;
+  padding: 10px;
 }
+body {
+  background-color: lightblue;
+
+}
+
+
+
 
 /* Center website */
 
@@ -19,3 +22,47 @@ Laptop: 1366×768
 Widescreen: 1920×1080 */
 
 /* Responsive */
+
+@media(max-width: 800px) {
+
+  .main header nav {
+      display: flex;
+      flex-direction: column-reverse;
+      /* I can do another reverse here to get home on top */
+      align-items: center;
+  }
+  nav div {
+      flex-wrap: nowrap;
+      /* background-color: aquamarine; */
+  }
+  .main header nav a {
+      /* margin-bottom: 20px; */
+      width: 20%;
+      padding: 0;
+      margin: 5px auto;
+  }
+}
+
+@media(max-width: 500px) {
+
+  .main header nav {
+      display: flex;
+      flex-direction: column;
+  }
+  .main header nav a {
+      margin-bottom: 20px;
+  }
+  #myBtnContainer {
+      display: none;
+  }
+  .column {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+  }
+  .main header nav {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+}
