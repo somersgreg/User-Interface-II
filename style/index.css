@@ -2,70 +2,38 @@
 /* Use mediaqueries to set the background-color to lavender if the viewport is 800 pixels wide or wider, to lightgreen if the viewport is between 400 and 799 pixels wide. If the viewport is smaller than 400 pixels, the background-color is lightblue: */
 
 * {
-  border: 1px solid red;
+  font-size: 62.5%;
 }
 
 body {
   background-color: lightblue;
-}
-
-@media screen and (min-width: 400px) {
-  body {
-    background-color: lightgreen;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  body {
-    background-color: lavender;
-  }
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
   font-family: Arial;
+  padding: 10%;
 }
+img.name {
+  display:block;
+  margin: auto;
+  width:95%;
+  padding: 10px 0px;
 
+}
 /* Center website */
 
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
 h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-nav div {
-  display: flex;
-  align-items: flex-end;
+  font-size: 2em;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-right: 7%;
-  width: 100%;
-  /* border: 2px solid red; */
 }
-
 nav a {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-  justify-content: space-evenly;
+  display:flex;
+  justify-content: center;
   align-items: center;
-  color: black;
-  display: flex;
-  /* border: 2px solid red; */
   text-decoration: none;
   width: 10%;
+  background-color: aquamarine;
 }
 
 a:hover {
@@ -77,7 +45,6 @@ a:hover {
 }
 
 /* Add padding BETWEEN each column (if you want) */
-
 .row, .row>.column {
   padding: 8px;
 }
@@ -190,5 +157,11 @@ Widescreen: 1920×1080 */
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
+  }
+  div.row {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
   }
 }
